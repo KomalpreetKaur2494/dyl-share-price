@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Investi Share Price Chart</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .investi-share-price-chart {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Share Price Chart Container -->
+  <div class="investi-share-price-chart" 
+       data-investi-chart-theme-color-hex="#0B6974"
+       data-investi-chart-range-selected="2"
+       data-investi-range-selector-buttons="1m,3m,6m,YTD,1y,2y,All"
+       data-investi-chart-theme-yAxisColor-hex="#ff0000"
+       data-investi-chart-theme-xAxisColor-hex="#000000">
+  </div>
+
+  <!-- Required Scripts -->
+  <script src="https://code.highcharts.com/stock/11.1.0/highstock.js"></script>
+  <script src="https://api.investi.com.au/investi.js?apiKey=c8d685c4-f8b5-48bb-a046-0874b66cec72"></script>
+
+</body>
+</html>
